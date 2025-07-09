@@ -1,4 +1,3 @@
-import Accordion from "@/components/Accordion";
 import Forms from "@/components/Forms";
 import React from "react";
 import CatalogueAccordion from "@/components/CatalogueAccordion";

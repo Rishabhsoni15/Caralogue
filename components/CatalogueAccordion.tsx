@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { FaPlus, FaMinus, FaSearch } from "react-icons/fa";
+import { FaPlus, FaMinus } from "react-icons/fa";
 import FloatingInput from "@/Helper/FloatingInput";
 
 /* ─────────────────────────── Types ─────────────────────────── */

@@ -1,11 +1,9 @@
 "use client";
-import { Bokor, Inter } from "next/font/google";
 import { IoMdSearch } from "react-icons/io";
 import { FaPlus, FaMinus } from "react-icons/fa6"; // ← both icons
 import { useState } from "react";
 
 export default function Home() {
-  const [disableGutters, setDisableGutters] = useState(false);
   const [openItems, setOpenItems] = useState<string[]>([]);
 
   const accordionData = [
@@ -64,7 +62,7 @@ export default function Home() {
           </div>
 
           {/* ─────────────── Accordion ─────────────── */}
-          <div className={disableGutters ? "space-y-0" : "space-y-4"}>
+          <div className="space-y-4">
             {accordionData.map((item, idx) => {
               const isOpen = openItems.includes(item.id);
 
@@ -75,7 +73,7 @@ export default function Home() {
                     border border-gray-200 rounded-lg overflow-hidden 
                     ${item.disabled ? "opacity-50 cursor-not-allowed" : ""}
                     ${
-                      disableGutters
+                      false // disableGutters is removed, so this condition is always false
                         ? "rounded-none border-t-0 first:border-t first:rounded-t-lg last:rounded-b-lg"
                         : ""
                     }

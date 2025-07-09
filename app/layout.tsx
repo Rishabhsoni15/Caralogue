@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Public_Sans } from "next/font/google";
 import "./globals.css";
 
 // const publicSans = Public_Sans({
